@@ -23,7 +23,7 @@ def process_start(s_sock,s_addr):
         elif op == "sq":
             print(str(s_addr) + " has choosen Square Root Function")
             line = "\n_______________________________________________________________\n"
-            answer = "Answer " + str(math.sqrt(int(val))) + line
+            answer = "Answer: " + str(math.sqrt(int(val))) + line
             s_sock.send(str.encode(answer))
             
         elif op == "exp":
